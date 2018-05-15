@@ -1,8 +1,4 @@
-#include <chrono>
-#include <iostream>
-#include <thread>
-
-using ms = std::chrono::milliseconds;
+#include "pomo.h"
 
 //
 // A Pomodoro timer written in C++
@@ -27,11 +23,17 @@ void print_duration(std::chrono::system_clock::duration& duration)
 }
 
 int main() {
+
+    Pomo timer;
+
+
     auto timenow = std::chrono::system_clock::now();
 
     std::this_thread::sleep_for(ms(500));
 
     auto timesecond = std::chrono::system_clock::now();
+
+    timer.printTime();
 
     auto timeduration = timesecond - timenow;
 
