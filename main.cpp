@@ -1,10 +1,20 @@
 #include <chrono>
 #include <iostream>
-#include <ctime>
-#include <iomanip>
 #include <thread>
 
 using ms = std::chrono::milliseconds;
+
+//
+// A Pomodoro timer written in C++
+// By: zdelv
+// Splits work into 25 minute intervals, with 3-5 minute break
+// in between. There is also a longer break after 4-5 work intervals
+// The length of or number of intervals is changable via commandline
+// or conf file (.config/pomo/pomo.conf)
+//
+// Also has the ability to output in a manner perfect for polybar
+//
+
 
 void print_time_point(std::chrono::system_clock::time_point& point)
 {
@@ -27,5 +37,4 @@ int main() {
 
     print_duration(timeduration);
     print_time_point(timenow);
-
 }
