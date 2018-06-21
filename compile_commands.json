@@ -1,0 +1,11 @@
+[
+ {
+  "directory": "/home/zdelv/usr/proj/pomo",
+  "file": "main.cpp",
+  "arguments": [
+   "c++",
+   "-I./include",
+   "main.cpp"
+  ]
+ }
+]
