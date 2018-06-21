@@ -12,6 +12,9 @@ notifications:
         on_success: never
         on_failure: never
 
+before_script:
+    - dpkg -L libstdc++-6-dev
+
 addons:
     apt:
         sources:
