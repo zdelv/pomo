@@ -7,7 +7,7 @@
 #include <mutex>
 
 namespace chrono = std::chrono;
-using namespace std::chrono_literals;
+using namespace std::literals::chrono_literals;
 using clock_type = std::chrono::system_clock;
 using ms = std::chrono::milliseconds;
 using sec = std::chrono::seconds;
