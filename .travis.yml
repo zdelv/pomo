@@ -6,3 +6,8 @@ compiler:
 os: linux
 install: true
 script: mkdir build && make pomo
+
+notifications:
+    email:
+        on_success: never
+        on_failure: never
