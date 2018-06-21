@@ -18,4 +18,4 @@ addons:
             - llvm-toolchain-trusty-5.0
             - ubuntu-toolchain-r-test
         packages:
-            - libstdc++-5
+            - libstdc++-6-dev
